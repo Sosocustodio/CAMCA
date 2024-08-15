@@ -1,0 +1,156 @@
+/* PROCESSO DE COMPRA */
+.processo {
+    width: 700px;
+    /* Define a largura da div processo */
+    margin: 0 auto;
+    /* Centraliza a div horizontalmente */
+}
+
+.barraProgresso {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Divide em 4 colunas iguais */
+    gap: 5px;
+    /* Espaçamento entre as barras de progresso */
+}
+
+.Estagio {
+    display: flex;
+    justify-content: center;
+    /* Centraliza a div Estagio */
+    margin-top: 20px;
+    /* Espaço entre as seções */
+}
+
+.processoPedido {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Garante que cada h2 tenha seu espaço */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+.estagioPedido {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    /* Ajusta o tamanho da fonte, se necessário */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .processo {
+        width: 100%;
+        /* Torna a div processo responsiva */
+    }
+
+    .barraProgresso {
+        grid-template-columns: 1fr;
+        /* Torna as barras de progresso em uma coluna em telas menores */
+    }
+
+    .processoPedido {
+        grid-template-columns: 1fr;
+        /* Torna os h2 em uma coluna em telas menores */
+    }
+}
+
+/* PROCESSO DE COMPRA */
+
+/* RODAPÉ */
+.app-footer {
+    background: #dcdcdc;
+    padding: .5rem 2rem;
+    text-align: right;
+}
+
+.app-footer__message {
+    color: #595959;
+    font-family: sans-serif;
+}
+
+/* RODAPÉ */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 2px dotted #FF4500;
+    /* Laranja avermelhado */
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px 20px;
+    min-width: 200px;
+    /* Garantir que os itens se ajustem em telas menores */
+}
+
+.footer-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.navegacao-heading {
+    color: #008080;
+    /* Verde azulado */
+
+}
+
+.fale-conosco-heading {
+    color: #DC143C;
+    /* Vermelho carmesim */
+}
+
+.links-rapidos-heading {
+    color: #DAA520;
+    /* Amarelo dourado */
+}
+
+.linksRodape {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #333333;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+}
+
+/* BOTÃO DOE AGR */
+.special-button {
+    background-color: #f5a623;
+    /* Cor de fundo */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
