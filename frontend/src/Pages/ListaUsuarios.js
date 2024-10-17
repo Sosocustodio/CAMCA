@@ -1,13 +1,22 @@
 //Lista de Usuarios
 import React from "react";
-import TabelaCadastro from "../Components/TabelaCadastro";
+import ControleSaidas from "../Components/ControleSaidas";
+import bannercu from '../imagens/bannercu.png';
 
 const ListaUsuarios = () => {
+
+  const backgroundStyle = {
+    backgroundImage: `url(${bannercu})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    width: '99%',
+    height: '100vh'
+  };
+
   return (
     <>
-      <div>
-        <h2>Lista de Usuários</h2>
-        <TabelaCadastro />
+     <div style={backgroundStyle}>
+      <ControleSaidas />
       </div>
     </>
   );

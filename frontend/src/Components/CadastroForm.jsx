@@ -23,7 +23,7 @@ const CadastroForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3001/cadastros', formData);
+      await axios.post('http://localhost:3001/cadastro', formData);
       alert('Cadastro criado com sucesso!');
       // Limpar o formulário após o envio bem-sucedido
       setFormData({

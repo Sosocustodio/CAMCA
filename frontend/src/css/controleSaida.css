@@ -1,0 +1,66 @@
+
+.tabelabotao {
+    margin-top: 350px;
+    margin-left: 500px;
+    position: relative;
+    height: 60px;
+    width: 200px;
+    /* margin: 0 35px; */
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.tabelabotao:first-child:hover {
+    background: linear-gradient(90deg,#0a6789, #fa6632, #fecd23, #0a6789);
+    background-size: 400%;
+}
+
+.tabelabotao:last-child:hover {
+    background: linear-gradient(90deg,#fa6632, #fecd23, #cf0638, #fa6632    );
+    background-size: 400%;
+}
+
+.tabelabotao:first-child:before,
+.tabelabotao:last-child:before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.tabelabotao:first-child:hover:before,
+.tabelabotao:last-child:hover:before {
+    opacity: 1;
+    z-index: -1;
+}
+
+.tabelabotao:hover {
+    z-index: 1;
+    animation: glow 8s linear infinite;
+}
+
+@keyframes glow {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}

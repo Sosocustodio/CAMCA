@@ -1,0 +1,41 @@
+.formulo {
+    height: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.logoformlo {
+    width: 90px;
+    margin-left: 230px;
+  }
+
+.textformlo {
+    margin-left: 220px;
+}
+
+.cpf {
+    width: 230px;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.senha {
+    width: 230px;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.botaocardlo {
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+
+.camquinhoolo {
+    width: 100px;
+    margin-left: 70px;
+    margin-top: 20px;
+}

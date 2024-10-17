@@ -1,0 +1,118 @@
+.linkNav
+{
+  color: black;
+  text-decoration: none;
+}
+/* 
+.dropdown-item:hover
+{
+  background-color: white;
+    text-decoration: none;
+}
+
+.dropdown-menu.show{
+  border-color: #fa6632;
+  background-color: #fa6632;
+} */
+
+.logonav {
+  width: 100px;
+  margin-right: 280px;
+}
+
+.donate-button {
+  background-color: orange;
+  /* Cor de fundo laranja */
+  color: white;
+  /* Cor do texto branca */
+  border: none;
+  /* Remove a borda padrão */
+  border-radius: 10px;
+  /* Arredonda os cantos do botão */
+  padding: 10px 20px;
+  /* Adiciona padding interno */
+  font-size: 16px;
+  /* Tamanho da fonte */
+  cursor: pointer;
+  /* Muda o cursor para uma mãozinha ao passar por cima */
+  display: flex;
+  /* Usa flexbox para alinhar o texto e o ícone */
+  align-items: center;
+  /* Alinha verticalmente os itens */
+}
+
+.heart {
+  color: red;
+  /* Cor do coração vermelha */
+  margin-left: 8px;
+  /* Espaço entre o texto e o ícone */
+  font-size: 18px;
+  /* Tamanho do ícone */
+}
+
+.donate-button {
+  position: relative;
+  height: 60px;
+  width: 150px;
+  margin: 0 35px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: #fa6632;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.5s;
+  align-items: center;
+
+}
+
+.donate-button:first-child:hover {
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+
+.donate-button:last-child:hover {
+  background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+  background-size: 400%;
+}
+
+.donate-button:first-child:before,
+.donate-button:last-child:before {
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 50px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.donate-button:first-child:hover:before,
+.donate-button:last-child:hover:before {
+  opacity: 1;
+  z-index: -1;
+}
+
+.donate-button:hover {
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
